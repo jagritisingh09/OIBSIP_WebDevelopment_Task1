@@ -26,8 +26,8 @@ The landing page aims to showcase the brand, highlight featured products, and gi
 
 ## How to Run
 1. Download or clone this repository.  
-2. Keep `index.html`, `style.css`, and the `images` folder in the same directory.  
-3. Open `index.html` in any browser to view the landing page.  
+2. Keep `ice cream.html`, `style.css`, and the `images` folder in the same directory.  
+3. Open `ice cream.html` in any browser to view the landing page.  
 
 ## Outcome
 - A working **landing page** for an Ice Cream Company.  
