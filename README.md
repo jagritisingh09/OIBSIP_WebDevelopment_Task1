@@ -8,7 +8,7 @@ The purpose of this project is to design a **landing page** for an Ice Cream Com
 The landing page aims to showcase the brand, highlight featured products, and give visitors a clean first impression of the business.
 
 ## Files in this repository
-- `index.html` → Structure of the landing page  
+- `ice cream.html` → Structure of the landing page  
 - `style.css` → Styling for layout, colors, and responsiveness  
 - `images/` → Contains all images used in the design (ice creams, background, etc.)  
 - `README.md` → Project overview  
