@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Tropics Ice Cream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-section">
+    <header>
+        <nav>
+            <h1 class="logo">OM HOUSE ICECREAM CO.,LTD</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>Experience the Flavors of the Tropics</h2>
+        <p>Authentic Thai flavors in every scoop</p>
+        <a href="#flavors" class="btn">Order Now</a>
+    </section>
+</div>
+    <section id="flavors">
+        <h2>Our Flavors</h2>
+        <div class="flavor-grid" id="flavorGrid">   
+            <!-- Vanilla -->
+    <div class="flavor card" data-id="vanilla">
+      <img src="images/vanilla.jpeg" alt="Vanilla">
+      <p class="title">Vanilla</p>
+      <div class="muted">Classic tropical vanilla flavor.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-vanilla" class="muted">Qty</label>
+        <input id="qty-vanilla" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('vanilla')">Add to Cart</button>
+    </div>
+
+    <!-- Milk Cookies -->
+    <div class="flavor card" data-id="milk-cookies">
+      <img src="images/milk-cookies.jpeg" alt="Milk Cookies">
+      <p class="title">Milk Cookies</p>
+      <div class="muted">Creamy blend with cookie chunks.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-milk-cookies" class="muted">Qty</label>
+        <input id="qty-milk-cookies" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('milk-cookies')">Add to Cart</button>
+    </div>
+
+    <!-- Vanilla Chips -->
+    <div class="flavor card" data-id="vanilla-chips">
+      <img src="images/vanilla-chips.jpeg" alt="Vanilla Chips">
+      <p class="title">Vanilla Chips</p>
+      <div class="muted">Vanilla with chocolate chip crunch.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-vanilla-chips" class="muted">Qty</label>
+        <input id="qty-vanilla-chips" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('vanilla-chips')">Add to Cart</button>
+    </div>
+
+    <!-- Strawberry -->
+    <div class="flavor card" data-id="strawberry">
+      <img src="images/strawberry.jpeg" alt="Strawberry">
+      <p class="title">Strawberry</p>
+      <div class="muted">Fresh strawberry delight.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-strawberry" class="muted">Qty</label>
+        <input id="qty-strawberry" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('strawberry')">Add to Cart</button>
+    </div>
+
+    <!-- Cocoa Chips -->
+    <div class="flavor card" data-id="cocoa-chips">
+      <img src="images/cocoa-chips.jpeg" alt="Cocoa Chips">
+      <p class="title">Cocoa Chips</p>
+      <div class="muted">Rich cocoa with chocolate chips.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-cocoa-chips" class="muted">Qty</label>
+        <input id="qty-cocoa-chips" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('cocoa-chips')">Add to Cart</button>
+    </div>
+
+    <!-- Coconut Milk -->
+    <div class="flavor card" data-id="coconut-milk">
+      <img src="images/coconut-milk.jpeg" alt="Coconut Milk">
+      <p class="title">Coconut Milk</p>
+      <div class="muted">Creamy coconut Thai style.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-coconut-milk" class="muted">Qty</label>
+        <input id="qty-coconut-milk" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('coconut-milk')">Add to Cart</button>
+    </div>
+
+    <!-- Cocoa -->
+    <div class="flavor card" data-id="cocoa">
+      <img src="images/cocoa.jpeg" alt="Cocoa">
+      <p class="title">Cocoa</p>
+      <div class="muted">Deep cocoa richness.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-cocoa" class="muted">Qty</label>
+        <input id="qty-cocoa" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('cocoa')">Add to Cart</button>
+    </div>
+
+    <!-- Coffee -->
+    <div class="flavor card" data-id="coffee">
+      <img src="images/coffee.jpeg" alt="Coffee">
+      <p class="title">Coffee</p>
+      <div class="muted">Strong Thai coffee flavor.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-coffee" class="muted">Qty</label>
+        <input id="qty-coffee" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('coffee')">Add to Cart</button>
+    </div>
+
+    <!-- Taro -->
+    <div class="flavor card" data-id="taro">
+      <img src="images/taro.jpeg" alt="Taro">
+      <p class="title">Taro</p>
+      <div class="muted">Sweet purple taro treat.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-taro" class="muted">Qty</label>
+        <input id="qty-taro" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('taro')">Add to Cart</button>
+    </div>
+
+    <!-- Thai Tea -->
+    <div class="flavor card" data-id="thai-tea">
+      <img src="images/thai-tea.jpeg" alt="Thai Tea">
+      <p class="title">Thai Tea</p>
+      <div class="muted">Signature Thai iced tea taste.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-thai-tea" class="muted">Qty</label>
+        <input id="qty-thai-tea" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('thai-tea')">Add to Cart</button>
+    </div>
+
+    <!-- Green Tea -->
+    <div class="flavor card" data-id="green-tea">
+      <img src="images/green-tea.jpeg" alt="Green Tea">
+      <p class="title">Green Tea</p>
+      <div class="muted">Matcha green tea fusion.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-green-tea" class="muted">Qty</label>
+        <input id="qty-green-tea" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('green-tea')">Add to Cart</button>
+    </div>
+
+    <!-- Lime -->
+    <div class="flavor card" data-id="lime">
+      <img src="images/lime.jpeg" alt="Lime">
+      <p class="title">Lime</p>
+      <div class="muted">Refreshing lime citrus sorbet.</div>
+      <div class="price">฿20</div>
+      <div class="qty-row">
+        <label for="qty-lime" class="muted">Qty</label>
+        <input id="qty-lime" type="number" min="1" value="1">
+      </div>
+      <button class="add-btn" onclick="addToCart('lime')">Add to Cart</button>
+     </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Born in the heart of Bangkok,Trophical Scoops blends Thai tradition with sweet innovation.</p>
+        <img src="">
+    </section>
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+       </form>
+       <p>97 Kanchanaphisek Road,Khan Na Yao Subdistrict,Khan Na Yao District,Bangkok 10510</p>
+       <p>Bangkok, Thailand | +66940403018</p>
+    </section>
+<section id="order">
+<aside class="order-panel">
+  <div class="order-head">
+    <span>Your Order</span>
+    <button class="danger" id="clearCartBtn">Clear</button>
+  </div>
+  <div class="order-body" id="cartItems">
+    <div style="opacity:.7">No items yet. Add flavors to your cart.</div>
+  </div>
+  <div class="order-foot">
+    <div class="total-row">
+      <span>Total</span>
+      <span id="cartTotal">฿0</span>
+    </div>
+    <div class="field">
+      <input id="custName" placeholder="Your name">
+      <input id="custPhone" placeholder="Phone (Thailand)">
+    </div>
+    <div class="field">
+      <input id="custAddress" placeholder="Delivery address">
+    </div>
+    <button class="place-btn" id="placeOrderBtn">Place Order via WhatsApp</button>
+  </div>
+</aside>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
